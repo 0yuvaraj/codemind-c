@@ -8,8 +8,8 @@ int main()
 	{
 		i=n%10;
 		j=j*10+i;
-		n=n/10;
+		n=(n-i)/10;
 	}
-	if (j==x) printf("True");
-	else printf("False");
+	if (j==x) printf("Palindrome");
+	else printf("Not Palindrome");
 }
