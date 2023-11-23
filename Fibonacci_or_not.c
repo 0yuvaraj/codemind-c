@@ -1,20 +1,16 @@
 #include <stdio.h>
 int main()
 {
-	int n,i;
+	int n,x;
 	scanf("%d",&n);
-	if(n==0 || n==1)
-	printf("True");
-	else
+	int a=0,b=1,c;
+	while (a<=n)
 	{
-    	int a=0,b=1,c=a+b;
-    	while(c<n)
-    	{
-    		a=b;
-    		b=c;
-    		c=a+b;
-    	}
-    	if (c==n) printf("True");
-    	else printf("False");
+		x=a;
+		c=a+b;
+		a=b;
+		b=c;
 	}
+	if (x==n) printf("True");
+	else printf("False");
 }
